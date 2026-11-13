@@ -896,6 +896,7 @@ static struct task_struct *dup_task_struct(struct task_struct *orig, int node)
 #ifdef CONFIG_ACCESS_TOKENID
 	tsk->token = orig->token;
 	tsk->ftoken = 0;
+	tsk->user_id = orig->user_id;
 #endif
 	/*
 	 * arch_dup_task_struct() clobbers the stack-related fields.  Make

@@ -1507,6 +1507,7 @@ struct task_struct {
 #ifdef CONFIG_ACCESS_TOKENID
 	u64				token;
 	u64				ftoken;
+	u32				user_id;
 #endif
 #ifdef CONFIG_QOS_CTRL
 	struct qos_task_struct qts;
